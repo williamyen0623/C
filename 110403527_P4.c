@@ -9,7 +9,6 @@ void sort(int _lottoNumber[], int _lottoSize);
 int find_WinCount(int _iUserNum[], int _iLottoNum[], size_t _LENGTH);
 void find_WinNum(int _iUserNum[], int _iLottoNum[], int _iWinNum[] , size_t _iWinCount);
 
-
 int main(void){
     size_t LENGTH = 6;//define the user and lotoo array length by 6
     int iUserNum[LENGTH];
@@ -44,7 +43,6 @@ int main(void){
     }//end else
     return 0;
 }//end main
-
 
 void define_UserNum(int _iUserNum[] , size_t _LENGTH){
     for(int i = 0 ; i < _LENGTH ; ++i){//take user input for the value in the array
@@ -116,7 +114,7 @@ int find_WinCount(int _iUserNum[], int _iLottoNum[], size_t _LENGTH){
 
 void find_WinNum(int _iUserNum[], int _iLottoNum[], int _iWinNum[] , size_t _iWinCount){
     int k = 0;
-    int j = 0;//WinArray counter must be seperated from other array counter
+    int j = 0;//WinNum counter
     for(int i = 0 ; i < _iWinCount ; ++i){
         k = 0;
         while(k < 6){
