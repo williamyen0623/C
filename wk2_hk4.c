@@ -22,12 +22,14 @@ int main(void){
 
     return 0;
 
-    /*char input[6],count=0;
+    /*
+    char input[6],count=0;
     printf("%s","input>");
     fgets(input,6,stdin);
     if (strlen(input)-1=='\n')input[strlen(input)-1]='0';
     for(int i=0;i<6;i++){
         if(input[i]=='7')count++;
     }
-    printf("'%s' have %d '7'.",input,count);*/
+    printf("'%s' have %d '7'.",input,count);
+    */
 }
