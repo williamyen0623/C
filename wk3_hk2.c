@@ -71,6 +71,6 @@ int main(void){
             default:{
                 printf("%s\n","wrong input");
             }
-        } 
-    }
-}
+        }//end switch
+    }//end while
+}//end main
