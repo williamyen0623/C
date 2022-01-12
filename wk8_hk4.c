@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 void moveleft(char _str[],int _lenSize);
 int findShortestLength(char str[]);
@@ -16,18 +15,17 @@ int main(void){
         }
         if(str[strlen(str)-1]=='\n')str[strlen(str)-1]='\0';
         output[i]=findShortestLength(str);
-    }
+    }//end for
     puts("---output---");
     for(int k=0;k<i;k++){
         printf("%d\n",output[k]);
-    }
+    }//end for
     return 0;
-}
+}//end main
 
 int findShortestLength(char str[]){
         int lenSize=strlen(str);
         char cpyforcmp[lenSize],cpyforget[lenSize],compare[lenSize];
-        strcpy(cpyforcmp,str);
 
         for(int i=1;i<=lenSize;i++){
             strcpy(cpyforget,str);
@@ -50,9 +48,7 @@ int findShortestLength(char str[]){
 }//end main
 
 void moveleft(char _str[],int _lenSize){
-    char hold=_str[0];
     for(int i=0;i<_lenSize-1;i++){
         _str[i]=_str[i+1];
-    }
-    _str[_lenSize-1]=hold;
-}
+    }//end for
+}//end moveleft
