@@ -10,7 +10,10 @@ int main(void){
     }
     printf("%d-",row);
     int column=cell%702;
-    if(column<=26){
+    if(column==0){
+        printf("%s","ZZ");
+    }
+    else if(column<=26){
         printf("%c",column+64);
     }
     else{
