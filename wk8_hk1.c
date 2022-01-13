@@ -47,7 +47,7 @@ int findLongestLength(char str[]){
         else{
             return lenSize-count1;
         }//end else
-    }
+    }//end if
     else if(count1>0){
         return lenSize-count1+1;
     }//end else if
