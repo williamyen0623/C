@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int findLongestLength(char str[]);
+int findLongestLength(char str[]);//fuction prototype
 
 int main(void){
     int output[10]={0};
@@ -9,9 +9,7 @@ int main(void){
     for(i=0;i<10;i++){
         char str[101];
         fgets(str,101,stdin);
-        if(str[0]=='0'){
-            break;
-        }
+        if(str[0]=='0')break;
         if(str[strlen(str)-1]=='\n')str[strlen(str)-1]='\0';
         output[i]=findLongestLength(str);
     }//end for
