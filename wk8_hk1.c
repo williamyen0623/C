@@ -25,7 +25,7 @@ int main(void){
 int findLongestLength(char str[]){
     int lenSize=strlen(str);
     int count,count1=0,countOdd=0;
-    for(int i=0;i<lenSize;i++){
+    for(int i=0;i<lenSize;i++){//calculate the times '1' and 'odd number' appear
         count=1;
         if(str[i]=='0')continue;
         for(int k=i+1;k<lenSize;k++){
@@ -40,7 +40,8 @@ int findLongestLength(char str[]){
         else if(count%2==1){
             countOdd++;
         }//end else if
-    }
+    }//end for
+    
     if(count1>0&&countOdd>0){
         if(countOdd>1){
             return lenSize-count1-countOdd+1;
